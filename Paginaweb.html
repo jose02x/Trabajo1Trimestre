@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+ <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"content="width=device-width,,initial-scale=1.0">
+    <title> TRABAJO DE 1ºTrimestre</title>
+
+
+    <style> 
+    #Portarretratos {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        margin: 0auto;
+    }
+
+    #Imagenes {
+        display: block;
+        height: 60vh;
+        width: 60vw ;
+        margin: auto;
+    }
+    #imagen-primaria {
+        display: block;
+        width: 100%;
+        height: 100%;
+        
+        margin:  auto;
+    }
+    @media screen and (orientation:landscape){
+        #Imagenes {
+            max-width: 80%;
+            max-height: 80%;
+            margin: auto;
+            display: flex;
+            object-fit: cover;
+            align-items: center;
+        }
+    }
+    @media screen and (orientation:portrait) {
+        #Imagenes {
+            max-width: 100vw;
+            max-height: 100vw;
+            margin: 0 auto;
+            object-fit: cover;
+            align-items: center;
+            display: flex;
+
+
+        }
+    }    
+    
+    </style>
+    
+
+</head>
+<body>
+   
+    <center><h1>Jose Alexander Coca  </h1></center>
+    <center><h2>Trabajo De 1ªTrimestre</h2></center>
+    <body bgcolor="6D33FF">
+        <div id="Portarretratos">
+        <picture id="Imagenes">
+            <source media="(orientation: landscape) and (min-width:18500px)"
+            srcset="./Foto3.heic" type="image/heic">
+            <source media="(orientation: landscape) and (min-width:1850px)"
+            srcset="./Foto3.webp" type="image/webp">
+            <source media="(orientation: landscape) and (min-width:18500px)"
+            srcset="./Foto3.jpg" type="image/jpg">
+
+            <source media="(orientation: portrait) and (min-width:1000px)"
+            srcset="./Foto1.heic" type="image/heic">
+            <source media="(orientation: portrait) and (min-width:1000px)"
+            srcset="./Foto1.webp" type="image/webp">
+            <source media="(orientation: portrait) and (min-width:1000px)"
+            srcset="./Foto1.jpg" type="image/jpg">
+
+            <source media="(orientation: landscape) and (min-width:1000px)"
+            srcset="./Foto4.heic" type="image/heic">
+            <source media="(orientation: landscape) and (min-width:1000px)"
+            srcset="./Foto4.webp" type="image/webp">
+            <source media="(orientation: landscape) and (min-width:1000px)"
+            srcset="./Foto4.jpg" type="image/jpg">
+
+
+            <source media="(orientation: portrait) and (min-width:500px)"
+            srcset="./f2ygn.heic" type="image/heic">
+            <source media="(orientation: portrait) and (min-width:500px)"
+            srcset="./f2ygn.webp" type="image/webp">
+            <source media="(orientation: portrait) and (min-width:500px)"
+            srcset="./f2ygn.jpg" type="image/jpg">
+
+
+           
+            <img id="imagen-primaria"
+             src="./cometas-y-planetas-en-paisaje-digital-urbano-en-la-noche_3840x2160_xtrafondos.com.jpg"
+             title="Imagen preciosa"
+             alt="Fotos muy bonita"
+        </picture>
+        </div>
+ </body>
+
+</html>
